@@ -10,9 +10,8 @@
 
 ## Thunks (can be async)
 
-5. Creating a thunk
-6. Dispatching a thunk
-7. Handling action in our reducer
+5. Creating a thunk & dispatching a thunk
+6. Handling action in our reducer
 
 ## 1. Setting up
 
@@ -68,3 +67,41 @@
 3. Return a new state for each case
 4. Logic how to transform the state
    - Check if state has changed in Redux Devtools
+
+# Thunks
+
+What is thunk
+
+- Function
+- That returns a function
+
+Redux Thunk
+
+- An action that is a function
+
+Redux Thunk - Y tho
+
+- Make sequences of actions
+- Possibility to check state before dispatching / fetching
+
+## Setup (we already did in step 1)
+
+- Apply middle ware, compose enhancer (check the docs)
+
+## Creating a Thunk & Dispatching it
+
+1. Define an action creator (thunk) -> fetchDevelopers
+   - It return a function
+2. Define an action creator (simple) -> setDevelopers
+   - It returns a simple action (object)
+3. Import in your component
+4. Call your thunk action creator to create an action
+   - console.log the output (we expect a function)
+5. Dispatch your action
+   - Check: devtools, are your action(s) being dispatched?
+
+## Handling action in our reducer
+
+1. Add a case for SET_DEVELOPERS
+2. Logic
+3. Check: Redux state -> is the state updated

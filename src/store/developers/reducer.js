@@ -22,6 +22,9 @@ export default function reducer(state = initialState, action = {}) {
         return developer;
       });
 
+    case "SET_DEVELOPERS":
+      return [...action.payload];
+
     default:
       return state;
   }

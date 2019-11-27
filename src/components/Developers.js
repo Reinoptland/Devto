@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { approveDeveloper } from "../store/developers/actions";
+import { approveDeveloper, fetchDevelopers } from "../store/developers/actions";
 
 class Developers extends Component {
   handleClick = id => {
@@ -9,6 +9,12 @@ class Developers extends Component {
     console.log(action);
     this.props.dispatch(action);
   };
+
+  componentDidMount() {
+    const thunkAction = fetchDevelopers();
+    console.log("What will this be?", thunkAction); // should be a function
+    this.props.dispatch(thunkAction);
+  }
 
   render() {
     return (
