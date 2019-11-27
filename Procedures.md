@@ -32,3 +32,18 @@
 - npm start
 - check devtools
 - see if you have an initial state
+
+## 2. Using state from redux in your component
+
+1. Create component
+2. Use your component in the app
+   - Check: your components
+3. connect
+   - Check: do we have dispatch as a prop
+4. mapStateToProps
+   - Write mapStateToProps function
+   - pass it to connect (as the first argument)
+   - Check: console.log props in the render
+   - Check: props in component React devtools
+5. Use this.props.something in your componen
+   - Final check: change initial state, page should change
