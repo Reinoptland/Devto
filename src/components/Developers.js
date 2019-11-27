@@ -20,6 +20,7 @@ class Developers extends Component {
               <button onClick={() => this.handleClick(developer.id)}>
                 Would work with again
               </button>
+              {developer.rockstarDeveloper ? <h2>Rockstar</h2> : <p>eh..</p>}
             </div>
           );
         })}

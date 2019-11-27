@@ -59,3 +59,12 @@
    - console.log your action, does it have type & payload
 6. Dispatch action
    - Check devtools -> action dispatched?
+
+## 4. Handle action reducer
+
+1. Switch
+2. Default case
+   - Check: Redux Devtools for inital state
+3. Return a new state for each case
+4. Logic how to transform the state
+   - Check if state has changed in Redux Devtools
