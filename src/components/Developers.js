@@ -17,6 +17,10 @@ class Developers extends Component {
   }
 
   render() {
+    if (this.props.loading) {
+      return "Loading";
+    }
+
     return (
       <div>
         {this.props.developers.map(developer => {
@@ -42,7 +46,8 @@ class Developers extends Component {
 // this object gets added to props of our component
 const mapStateToProps = reduxState => {
   return {
-    developers: reduxState.developers
+    developers: reduxState.developers,
+    loading: reduxState.appState.loading
   };
 };
 

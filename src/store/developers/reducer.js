@@ -1,7 +1,4 @@
-const initialState = [
-  { id: 32, name: "Rein", rockstarDeveloper: false },
-  { id: 1, name: "Wouter", rockstarDeveloper: false }
-];
+const initialState = [];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {

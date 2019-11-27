@@ -88,7 +88,7 @@ Redux Thunk - Y tho
 
 - Apply middle ware, compose enhancer (check the docs)
 
-## Creating a Thunk & Dispatching it
+## 5. Creating a Thunk & Dispatching it
 
 1. Define an action creator (thunk) -> fetchDevelopers
    - It return a function
@@ -100,7 +100,7 @@ Redux Thunk - Y tho
 5. Dispatch your action
    - Check: devtools, are your action(s) being dispatched?
 
-## Handling action in our reducer
+## 6. Handling action in our reducer
 
 1. Add a case for SET_DEVELOPERS
 2. Logic
