@@ -8,3 +8,5 @@
 - [Using redux state in your component](https://github.com/Reinoptland/Devto/commit/b53e363d904b664d94196e609a1b2e09965c89dc)
 - [Dispatching an action to Redux](https://github.com/Reinoptland/Devto/commit/bffbc375a280bda4045a402003ad10da80792d38)
 - [Handling action in reducer](https://github.com/Reinoptland/Devto/commit/2ba46da01ffa4ba73b7fdd65ea13b041522ca2cd) 
+- [Creating & Dispatching thunks](https://github.com/Reinoptland/Devto/commit/31003ab9c296dcc43d157fc125131364835e2da2)
+- [Multi step thunks](https://github.com/Reinoptland/Devto/commit/16f40d8bade2d124bc0aaa12ef56e8679f81ffd2)
