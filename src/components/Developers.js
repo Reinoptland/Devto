@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { approveDeveloper } from "../store/developers/actions";
 
 class Developers extends Component {
+  handleClick = id => {
+    console.log("APPROVED");
+    const action = approveDeveloper(id);
+    console.log(action);
+    this.props.dispatch(action);
+  };
+
   render() {
     return (
       <div>
@@ -9,6 +17,9 @@ class Developers extends Component {
           return (
             <div key={developer.id}>
               <h1>{developer.name}</h1>
+              <button onClick={() => this.handleClick(developer.id)}>
+                Would work with again
+              </button>
             </div>
           );
         })}

@@ -47,3 +47,15 @@
    - Check: props in component React devtools
 5. Use this.props.something in your componen
    - Final check: change initial state, page should change
+
+## 3. Dispatching action from component
+
+1. Add component / button etc.
+2. Event listener
+3. Event handler
+   - Check: console.log something in event handler
+4. Action creator -> returns an action
+5. Call action creator -> action
+   - console.log your action, does it have type & payload
+6. Dispatch action
+   - Check devtools -> action dispatched?
