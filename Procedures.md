@@ -13,6 +13,12 @@
 5. Creating a thunk & dispatching a thunk
 6. Handling action in our reducer
 
+## Add Routing
+
+7. Setup routing
+8. Define a static Route
+9. Define a dynamic Route
+
 ## 1. Setting up
 
 1. Install redux, react-redux, redux-thunk
@@ -105,3 +111,18 @@ Redux Thunk - Y tho
 1. Add a case for SET_DEVELOPERS
 2. Logic
 3. Check: Redux state -> is the state updated
+
+## React Router
+
+- Multiple pages
+- Links (Link from react router) not <a>
+- Router component
+- Define a Route inside Router ->
+  - a Route component renders a component when the path matches
+
+## 7. Setup Routing
+
+- npm install react-router react-router-dom
+- Wrap our app in a Router component (inside index.js)
+- Make at least 1 Route, Home
+- Redirects file in public folder (not too important right now)
