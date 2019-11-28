@@ -19,6 +19,11 @@
 8. Add navigation & define a static Route
 9. Define a dynamic Route
 
+## Signup
+
+10. Signup page & Form
+11. Post data to the api
+
 ## 1. Setting up
 
 1. Install redux, react-redux, redux-thunk
@@ -140,12 +145,28 @@ Redux Thunk - Y tho
 3. We need the Route with a route parameter
 4. We need a component for this new route
 5. Use the Route parameter (id) to fetch the correct data (use router props)
+   - id is found in this.props.match.params.id
    - componentDidMount
    - make a thunk ()
 6. Dispatch action
+   - connect to get access to dispatch
 7. Store in Redux
-8. Put data in component
+8. Put data in component (mapStateToProps)
 9. Display
+
+## 10. Signup page & Form
+
+1. New component
+2. Route & Link
+3. Form
+   - Inputs
+   - Submit button
+   - handleChange / handleSubmit
+   - Save state of the form in local state
+
+Check: Do we have the data from the form
+
+11. Post data to the api
 
 ## Deploy
 
