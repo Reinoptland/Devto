@@ -13,7 +13,6 @@ class Developers extends Component {
 
   componentDidMount() {
     const thunkAction = fetchDevelopers();
-    console.log("What will this be?", thunkAction); // should be a function
     this.props.dispatch(thunkAction);
   }
 

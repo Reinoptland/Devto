@@ -139,7 +139,7 @@ Redux Thunk - Y tho
 2. We need Link that links to a dynamic path
 3. We need the Route with a route parameter
 4. We need a component for this new route
-5. Use the Route parameter (userId) to fetch the correct data
+5. Use the Route parameter (id) to fetch the correct data (use router props)
 6. Dispatch action
 7. Store in Redux
 8. Put data in component
