@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { approveDeveloper, fetchDevelopers } from "../store/developers/actions";
+import { Link } from "react-router-dom";
 
 class Developers extends Component {
   handleClick = id => {
@@ -26,7 +27,9 @@ class Developers extends Component {
         {this.props.developers.map(developer => {
           return (
             <div key={developer.id}>
-              <h1>{developer.name}</h1>
+              <Link to={`/developers/${developer.id}`}>
+                <h1>{developer.name}</h1>
+              </Link>
               <button onClick={() => this.handleClick(developer.id)}>
                 Would work with again
               </button>

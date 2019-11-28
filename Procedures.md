@@ -16,7 +16,7 @@
 ## Add Routing
 
 7. Setup routing
-8. Define a static Route
+8. Add navigation & define a static Route
 9. Define a dynamic Route
 
 ## 1. Setting up
@@ -125,4 +125,26 @@ Redux Thunk - Y tho
 - npm install react-router react-router-dom
 - Wrap our app in a Router component (inside index.js)
 - Make at least 1 Route, Home
+
+## 8. Add navigation
+
+- Component that shows up an all pages (navbar)
+- Add Links to it
+- Links link to different path
+- Define a Route for each path
+
+## 9. Dynamic Routing
+
+1. We need an id
+2. We need Link that links to a dynamic path
+3. We need the Route with a route parameter
+4. We need a component for this new route
+5. Use the Route parameter (userId) to fetch the correct data
+6. Dispatch action
+7. Store in Redux
+8. Put data in component
+9. Display
+
+## Deploy
+
 - Redirects file in public folder (not too important right now)
