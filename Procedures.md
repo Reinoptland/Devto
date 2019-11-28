@@ -166,7 +166,31 @@ Redux Thunk - Y tho
 
 Check: Do we have the data from the form
 
-11. Post data to the api
+## 11. Post data to the api
+
+1. Took the data from the form
+2. Create thunk
+3. Dispatch thunk
+4. Check response from api
+5. Dispatch action to update the state with data from the api
+6. Handle action in reducer
+
+## 12. Making an authenticated request (using our token)
+
+1. Component
+2. Route, Link
+3. Form
+   - submit
+   - handlers, onchange
+   - Don't show form if you're not signed in
+     - connect, mapstateToProps, logic & Link
+4. Create a thunk
+   - Sends request to api
+   - with the token and the content
+5. Check response from api
+6. Dispatch action to the redux store with our post
+7. Handle action in reducer
+8. Display our post
 
 ## Deploy
 
